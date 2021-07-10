@@ -43,7 +43,7 @@ public class Task_6 {
 
             }
             else
-
+            {
                         System.out.println(" Выберите единицу измерения: 1 -  Килограмм, 2 -  Грамм, 3- Центнер, 4 - Пуд");
                         int xe = sc.nextInt();
                         System.out.println("Введите число");
@@ -77,6 +77,7 @@ public class Task_6 {
                                       System.out.println("Центнер: "+xn*(0.16));
                                       System.out.println("Пуд: "+xn);}
                                                 else System.out.println("Неправильно введена единица измерения");
+            }
 
         sc.close();
     }
