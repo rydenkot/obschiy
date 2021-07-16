@@ -1,17 +1,17 @@
 import java.util.Scanner;
 public class Task_7 {
 public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); // Объявляем Scanner
+        Scanner input = new Scanner(System.in);
         int x = 5;
         int y = 7;
         int z = 2;
         System.out.println("ведите  размер массива: ");
-        int size = input.nextInt(); // Читаем с клавиатуры размер массива и записываем в size
-        int array[] = new int[size]; // Создаём массив int размером в size
+        int size = input.nextInt(); 
+        int array[] = new int[size]; 
         System.out.println("Введите данные с клавиатуры:");
-        /*Пройдёмся по всему массиву, заполняя его*/
+        
         for (int i = 0; i < size; i++) {
-                array[i] = input.nextInt(); // Заполняем массив элементами, введёнными с клавиатуры
+                array[i] = input.nextInt(); 
                 if (array[i]==x || array[i]==y ||array[i]==z ){
                         System.out.print("Данное значение имеется в константах");
                 }
