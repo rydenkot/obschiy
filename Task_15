@@ -1,0 +1,18 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
+public class Task_15 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите курс доллара: ");
+        double x = sc.nextDouble();
+        System.out.println("Ведите сумму: ");
+        double xr = sc.nextDouble();
+        double xs=x*xr;
+        xs = new BigDecimal(xs).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
+        System.out.println("Итого: " + xs);
+
+
+        sc.close();
+    }
+}
