@@ -6,7 +6,7 @@ public class Task_15 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите курс доллара: ");
         double x = sc.nextDouble();
-        System.out.println("Ведите сумму: ");
+        System.out.println("Ведите колличество рублей: ");
         double xr = sc.nextDouble();
         double xs=x*xr;
         xs = new BigDecimal(xs).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
